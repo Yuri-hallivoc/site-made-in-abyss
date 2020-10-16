@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+    
+        var ep1 = "https://drive.google.com/file/d/1NwvJz_CPcpPu5Fhy75ztSY8wjh9c0dvL/view"
+        var ep2 = "https://drive.google.com/file/d/1vCmq3MMiuCMMzyPPYmsalMQFUIQsIFfD/view"
+        var ep3 = "https://drive.google.com/file/d/1gkxF-IIgXGCr8A_GwVMXyPNjc3gFdt1P/view"
+        var ep4 = "https://drive.google.com/file/d/1osZ9VsFuy-OSfK_jlLc2gblhyWEO4F5n/view"
+        var ep5 = "https://drive.google.com/file/d/1Xks9LNIFZszPZjHqv3d6y-X3hYvocehm/view"
+        var ep6 = "https://drive.google.com/file/d/1JG1jYYmMX_IJY52ipEv24fBbDINOF3hk/view"
+        var ep7 = "https://drive.google.com/file/d/1c2ah-cpw3-sQ5X40jWaqBCjwd_wORkPU/view"
+        var ep8 = "https://drive.google.com/file/d/17Z25XZW-l_i2DMJ_cFDPPckZG248TE0u/view"
+
+
+    </script>
+    <style>
+        button img{
+            width: 96px;
+            height: 54px;
+        }
+
+       button{
+           display: grid;
+           border: none;
+           line-height: 30px;
+       }
+
+       .visivel{
+           visibility: visible;
+       }
+
+       .invisivel{
+           visibility: hidden;
+           width: 0px;
+           height: 0px;
+       }
+
+    </style>
+</head>
+
+<body>
+    <br><br><br>
+    <h2 id="titulo">Lista de episódios</h2>
+    <div id="listas">
+        <br>
+        <h3>1ª Temporada</h3>
+        <button onclick="alt_visib('1_temp')">+ / -</button>
+        <hr>
+        <table id="1_temp" class="invisivel">
+            <tr>
+                <td><button onclick="window.open(ep1)"><img src="thumb01.png">episódio 01</button></td>
+                <td><button onclick="window.open(ep2)"><img src="thumb01.png">episódio 02</button></td>
+                <td><button onclick="window.open(ep3)"><img src="thumb01.png">episódio 03</button></td>
+                <td><button onclick="window.open(ep4)"><img src="thumb01.png">episódio 04</button></td>
+                <td><button onclick="window.open(ep5)"><img src="thumb01.png">episódio 05</button></td>
+                <td><button onclick="window.open(ep6)"><img src="thumb01.png">episódio 06</button></td>
+                <td><button onclick="window.open(ep7)"><img src="thumb01.png">episódio 07</button></td>
+                <td><button onclick="window.open(ep8)"><img src="thumb01.png">episódio 08</button></td>
+                <td><button onclick="window.open(ep9)"><img src="thumb01.png">episódio 09</button></td>
+                <td><button onclick="window.open(ep10)"><img src="thumb01.png">episódio 10</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="window.open(ep11)"><img src="thumb01.png">episódio 11</button></td>
+                <td><button onclick="window.open(ep12)"><img src="thumb01.png">episódio 12</button></td>
+                <td><button onclick="window.open(ep13)"><img src="thumb01.png">episódio 13</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+        function alt_visib(id){
+            var item = document.getElementById(id)
+            if(item.classList.contains("invisivel")){
+                item.classList.remove("invisivel")
+                item.classList.add("visivel")
+            }
+            else{
+                item.classList.remove("visivel")
+                item.classList.add("invisivel")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

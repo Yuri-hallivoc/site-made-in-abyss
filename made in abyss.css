@@ -1,0 +1,73 @@
+
+
+body{
+    background-image: url("geometry1.jpg");
+}
+
+header{
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+header figure img{
+    width:1280px;
+    height: 720px;
+}
+
+#cont_pos_header{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: silver;
+}
+
+nav{
+    background-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-bottom: none;
+}
+
+#nav_table button{
+    margin-bottom: -3px;
+}
+
+nav button{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-bottom: none;
+    width: 200px;
+    height: 40px;
+}
+
+#main_iframe{
+    width: 100%;
+    height: 800px;
+}
+
+#main_iframe html body p{
+    text-align: justify;
+}
+
+main{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-top: none;
+    margin-top: -2px;
+}
+
+.aba_ativada{
+    background-color: silver;
+}
+
+.aba_desativada{
+    background-color: white;
+}
