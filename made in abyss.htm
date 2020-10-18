@@ -12,12 +12,12 @@
     <script>
 
         function alt_aba(aba){
-            var local_frame = document.getElementById("main_iframe")
+            let local_frame = document.getElementById("main_iframe")
             local_frame.setAttribute("src", aba)
         }
 
         function troca_cor_botao(b){
-            var botao_ativo = document.querySelector(".aba_ativada")
+            let botao_ativo = document.querySelector(".aba_ativada")
             if(botao_ativo != null){
                 botao_ativo.classList.remove("aba_ativada")
             }

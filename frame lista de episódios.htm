@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <script>
     
-        var ep1 = "https://drive.google.com/file/d/1NwvJz_CPcpPu5Fhy75ztSY8wjh9c0dvL/view"
-        var ep2 = "https://drive.google.com/file/d/1vCmq3MMiuCMMzyPPYmsalMQFUIQsIFfD/view"
-        var ep3 = "https://drive.google.com/file/d/1gkxF-IIgXGCr8A_GwVMXyPNjc3gFdt1P/view"
-        var ep4 = "https://drive.google.com/file/d/1osZ9VsFuy-OSfK_jlLc2gblhyWEO4F5n/view"
-        var ep5 = "https://drive.google.com/file/d/1Xks9LNIFZszPZjHqv3d6y-X3hYvocehm/view"
-        var ep6 = "https://drive.google.com/file/d/1JG1jYYmMX_IJY52ipEv24fBbDINOF3hk/view"
-        var ep7 = "https://drive.google.com/file/d/1c2ah-cpw3-sQ5X40jWaqBCjwd_wORkPU/view"
-        var ep8 = "https://drive.google.com/file/d/17Z25XZW-l_i2DMJ_cFDPPckZG248TE0u/view"
+        const ep1 = "https://drive.google.com/file/d/1NwvJz_CPcpPu5Fhy75ztSY8wjh9c0dvL/view"
+        const ep2 = "https://drive.google.com/file/d/1vCmq3MMiuCMMzyPPYmsalMQFUIQsIFfD/view"
+        const ep3 = "https://drive.google.com/file/d/1gkxF-IIgXGCr8A_GwVMXyPNjc3gFdt1P/view"
+        const ep4 = "https://drive.google.com/file/d/1osZ9VsFuy-OSfK_jlLc2gblhyWEO4F5n/view"
+        const ep5 = "https://drive.google.com/file/d/1Xks9LNIFZszPZjHqv3d6y-X3hYvocehm/view"
+        const ep6 = "https://drive.google.com/file/d/1JG1jYYmMX_IJY52ipEv24fBbDINOF3hk/view"
+        const ep7 = "https://drive.google.com/file/d/1c2ah-cpw3-sQ5X40jWaqBCjwd_wORkPU/view"
+        const ep8 = "https://drive.google.com/file/d/17Z25XZW-l_i2DMJ_cFDPPckZG248TE0u/view"
 
 
     </script>
@@ -73,7 +73,7 @@
     <script>
 
         function alt_visib(id){
-            var item = document.getElementById(id)
+            let item = document.getElementById(id)
             if(item.classList.contains("invisivel")){
                 item.classList.remove("invisivel")
                 item.classList.add("visivel")
