@@ -15,12 +15,11 @@ header h1{
 }
 
 header figure img{
-    width:1280px;
-    height: 720px;
+    width: 100%;
 }
 
 #cont_pos_header{
-    width: 90%;
+    width: 99%;
     margin-left: auto;
     margin-right: auto;
     background-color: silver;
@@ -43,7 +42,7 @@ nav button{
     border-width: 1px;
     border-color: black;
     border-bottom: none;
-    width: 200px;
+    width: 100%;
     height: 40px;
 }
 
@@ -54,6 +53,10 @@ nav button{
 
 #main_iframe html body p{
     text-align: justify;
+}
+
+#figura_cabecalho{
+    margin: unset;
 }
 
 main{
