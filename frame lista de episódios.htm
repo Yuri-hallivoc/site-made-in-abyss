@@ -19,25 +19,55 @@
     </script>
     <style>
         button img{
-            width: 96px;
-            height: 54px;
+            width: 100%;
+            height: 90%;
         }
 
-       button{
-           display: grid;
-           border: none;
-           line-height: 30px;
-       }
+        button{
+            display: grid;
+            border: none;
+        }
+
 
        .visivel{
-           visibility: visible;
+            visibility: visible;
        }
 
        .invisivel{
-           visibility: hidden;
-           width: 0px;
-           height: 0px;
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
        }
+       
+       .lista_centralizada{
+            text-align: center;
+            line-height: 800%;
+       }
+
+       @media(min-width: 500px){
+
+            #item_lista{
+                display: inline-block;
+                width: 15%;
+            }
+
+        }
+
+        @media(max-width: 500px){
+            
+            #item_lista{
+                display: inline-block;
+                width: 80%;
+            }
+
+        }
+
+       #item_lista button{
+            line-height: 30px;
+            width: 100%;
+            height: 100%;
+       }
+
 
     </style>
 </head>
@@ -45,30 +75,24 @@
 <body>
     <br><br><br>
     <h2 id="titulo">Lista de episódios</h2>
-    <div id="listas">
-        <br>
-        <h3>1ª Temporada</h3>
-        <button onclick="alt_visib('1_temp')">+ / -</button>
-        <hr>
-        <table id="1_temp" class="invisivel">
-            <tr>
-                <td><button onclick="window.open(ep1)"><img src="thumb01.png">episódio 01</button></td>
-                <td><button onclick="window.open(ep2)"><img src="thumb01.png">episódio 02</button></td>
-                <td><button onclick="window.open(ep3)"><img src="thumb01.png">episódio 03</button></td>
-                <td><button onclick="window.open(ep4)"><img src="thumb01.png">episódio 04</button></td>
-                <td><button onclick="window.open(ep5)"><img src="thumb01.png">episódio 05</button></td>
-                <td><button onclick="window.open(ep6)"><img src="thumb01.png">episódio 06</button></td>
-                <td><button onclick="window.open(ep7)"><img src="thumb01.png">episódio 07</button></td>
-                <td><button onclick="window.open(ep8)"><img src="thumb01.png">episódio 08</button></td>
-                <td><button onclick="window.open(ep9)"><img src="thumb01.png">episódio 09</button></td>
-                <td><button onclick="window.open(ep10)"><img src="thumb01.png">episódio 10</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="window.open(ep11)"><img src="thumb01.png">episódio 11</button></td>
-                <td><button onclick="window.open(ep12)"><img src="thumb01.png">episódio 12</button></td>
-                <td><button onclick="window.open(ep13)"><img src="thumb01.png">episódio 13</button></td>
-            </tr>
-        </table>
+    <br>
+    <h3>1ª Temporada</h3>
+    <button onclick="alt_visib('1_temp')">+ / -</button>
+    <hr>
+    <div id="1_temp" class="lista_centralizada">
+                <span id="item_lista"><button onclick="window.open(ep1)"><img src="thumb01.png">episódio 01</button></span>
+                <span id="item_lista"><button onclick="window.open(ep2)"><img src="thumb01.png">episódio 02</button></span>
+                <span id="item_lista"><button onclick="window.open(ep3)"><img src="thumb01.png">episódio 03</button></span>
+                <span id="item_lista"><button onclick="window.open(ep4)"><img src="thumb01.png">episódio 04</button></span>
+                <span id="item_lista"><button onclick="window.open(ep5)"><img src="thumb01.png">episódio 05</button></span>
+                <span id="item_lista"><button onclick="window.open(ep6)"><img src="thumb01.png">episódio 06</button></span>
+                <span id="item_lista"><button onclick="window.open(ep7)"><img src="thumb01.png">episódio 07</button></span>
+                <span id="item_lista"><button onclick="window.open(ep8)"><img src="thumb01.png">episódio 08</button></span>
+                <span id="item_lista"><button onclick="window.open(ep9)"><img src="thumb01.png">episódio 09</button></span>
+                <span id="item_lista"><button onclick="window.open(ep10)"><img src="thumb01.png">episódio 10</button></span>
+                <span id="item_lista"><button onclick="window.open(ep11)"><img src="thumb01.png">episódio 11</button></span>
+                <span id="item_lista"><button onclick="window.open(ep12)"><img src="thumb01.png">episódio 12</button></span>
+                <span id="item_lista"><button onclick="window.open(ep13)"><img src="thumb01.png">episódio 13</button></span>
     </div>
     <script>
 

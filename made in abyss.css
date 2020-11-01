@@ -12,6 +12,7 @@ header h1{
     text-align: center;
     color: white;
     background-color: black;
+    margin: unset;
 }
 
 header figure img{
