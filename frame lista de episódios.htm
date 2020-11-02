@@ -14,7 +14,14 @@
         const ep6 = "https://drive.google.com/file/d/1JG1jYYmMX_IJY52ipEv24fBbDINOF3hk/view"
         const ep7 = "https://drive.google.com/file/d/1c2ah-cpw3-sQ5X40jWaqBCjwd_wORkPU/view"
         const ep8 = "https://drive.google.com/file/d/17Z25XZW-l_i2DMJ_cFDPPckZG248TE0u/view"
-
+        const ep9 = "https://drive.google.com/file/d/1x2ZNBPv7Wi3uqJteJQhHIE_3MrzP8z0R/view"
+        const ep10 = "https://drive.google.com/file/d/1yY1anxe2jhHh-XkHSj0H3ieqISr04-9G/view"
+        const ep11 = "https://drive.google.com/file/d/1d_VvxzVJRaMhg6BDhyirFRMbZdviYxuf/view"
+        const ep12 = "https://drive.google.com/file/d/1HCGH5I69YYwVb9OVF-bOd9PV6nUZ-Xud/view"
+        const ep13 = "https://drive.google.com/file/d/1KKmGrff_Jh9xVnquPyjcvuQFwNKgGL46/view"
+        const filme1 = ""
+        const filme2 = ""
+        const filme3 = "https://drive.google.com/file/d/1fno4RHOLAaTOPnm185UdtqydZ21GFlLw/view"
 
     </script>
     <style>
@@ -46,7 +53,7 @@
 
        @media(min-width: 500px){
 
-            #item_lista{
+            .item_lista{
                 display: inline-block;
                 width: 15%;
             }
@@ -55,7 +62,7 @@
 
         @media(max-width: 500px){
             
-            #item_lista{
+            .item_lista{
                 display: inline-block;
                 width: 80%;
             }
@@ -79,20 +86,34 @@
     <h3>1ª Temporada</h3>
     <button onclick="alt_visib('1_temp')">+ / -</button>
     <hr>
-    <div id="1_temp" class="lista_centralizada">
-                <span id="item_lista"><button onclick="window.open(ep1)"><img src="thumb01.png">episódio 01</button></span>
-                <span id="item_lista"><button onclick="window.open(ep2)"><img src="thumb01.png">episódio 02</button></span>
-                <span id="item_lista"><button onclick="window.open(ep3)"><img src="thumb01.png">episódio 03</button></span>
-                <span id="item_lista"><button onclick="window.open(ep4)"><img src="thumb01.png">episódio 04</button></span>
-                <span id="item_lista"><button onclick="window.open(ep5)"><img src="thumb01.png">episódio 05</button></span>
-                <span id="item_lista"><button onclick="window.open(ep6)"><img src="thumb01.png">episódio 06</button></span>
-                <span id="item_lista"><button onclick="window.open(ep7)"><img src="thumb01.png">episódio 07</button></span>
-                <span id="item_lista"><button onclick="window.open(ep8)"><img src="thumb01.png">episódio 08</button></span>
-                <span id="item_lista"><button onclick="window.open(ep9)"><img src="thumb01.png">episódio 09</button></span>
-                <span id="item_lista"><button onclick="window.open(ep10)"><img src="thumb01.png">episódio 10</button></span>
-                <span id="item_lista"><button onclick="window.open(ep11)"><img src="thumb01.png">episódio 11</button></span>
-                <span id="item_lista"><button onclick="window.open(ep12)"><img src="thumb01.png">episódio 12</button></span>
-                <span id="item_lista"><button onclick="window.open(ep13)"><img src="thumb01.png">episódio 13</button></span>
+    <div id="1_temp" class="lista_centralizada invisivel">
+        <span class="item_lista"><button onclick="window.open(ep1)"><img src="thumb01.png">episódio 01</button></span>
+        <span class="item_lista"><button onclick="window.open(ep2)"><img src="thumb01.png">episódio 02</button></span>
+        <span class="item_lista"><button onclick="window.open(ep3)"><img src="thumb01.png">episódio 03</button></span>
+        <span class="item_lista"><button onclick="window.open(ep4)"><img src="thumb01.png">episódio 04</button></span>
+        <span class="item_lista"><button onclick="window.open(ep5)"><img src="thumb01.png">episódio 05</button></span>
+        <span class="item_lista"><button onclick="window.open(ep6)"><img src="thumb01.png">episódio 06</button></span>
+        <span class="item_lista"><button onclick="window.open(ep7)"><img src="thumb01.png">episódio 07</button></span>
+        <span class="item_lista"><button onclick="window.open(ep8)"><img src="thumb01.png">episódio 08</button></span>
+        <span class="item_lista"><button onclick="window.open(ep9)"><img src="thumb01.png">episódio 09</button></span>
+        <span class="item_lista"><button onclick="window.open(ep10)"><img src="thumb01.png">episódio 10</button></span>
+        <span class="item_lista"><button onclick="window.open(ep11)"><img src="thumb01.png">episódio 11</button></span>
+        <span class="item_lista"><button onclick="window.open(ep12)"><img src="thumb01.png">episódio 12</button></span>
+        <span class="item_lista"><button onclick="window.open(ep13)"><img src="thumb01.png">episódio 13</button></span>
+    </div>
+    <h3>Filmes</h3>
+    <button onclick="alt_visib('filmes')">+ / -</button>
+    <hr>
+    <div id="filmes" class="lista_centralizada invisivel">
+        <span class="item_lista"><button onclick="alert('indisponível')">
+            <img src="thumb02.png">Filme 01: Made in Abyss Tabidachi No Yoake
+        </button></span>
+        <span class="item_lista"><button onclick="alert('indisponível')">
+            <img src="thumb02.png">Filme 02: Made in Abyss Hourou suru Tasogare
+        </button></span>
+        <span class="item_lista"><button onclick="window.open(filme3)">
+            <img src="thumb02.png">Filme 03: Made in Abyss Fukaki Tamashii no Reimei
+        </button></span>
     </div>
     <script>
 
